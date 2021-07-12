@@ -7,7 +7,7 @@ public class MaxPlayers {
         System.out.print("enter the number of players trying to get on the team: ");
         int attemptPlayers = input.nextInt();
         int need = Math.abs(totalPlayers - attemptPlayers);
-        if(attemptPlayers < totalPlayers){ ;
+        if(attemptPlayers < totalPlayers){
             System.out.println("There are not enough players. " + need + " more players are needed.");
         }
         else if(attemptPlayers > totalPlayers){
