@@ -15,8 +15,7 @@ public class AdjacentGap {
             return min;
         }
     }
-
     public static void main(String[] args) {
-        System.out.println(minGap(new int[]{1, -1, 4, 6, 10, 20}));
+        System.out.println(minGap(new int[]{1, -9, -2, 6, 10, 20}));
     }
 }

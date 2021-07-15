@@ -41,7 +41,7 @@ class Nobonacci {
 //        counter = new int[41];
 //        System.out.println(nobonacci1(40));
 //        System.out.println(Arrays.toString(counter));
-        System.out.println(memoizedNobonacci(20));
+        System.out.println(memoizedNobonacci(30));
         System.out.println(Arrays.toString(counter));
     }
 }
