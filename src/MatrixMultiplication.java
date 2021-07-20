@@ -1,4 +1,6 @@
+import java.sql.SQLOutput;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class MatrixMultiplication {
     public static double[][] multiplyMatrix(double[][] a, double[][] b){
@@ -23,8 +25,21 @@ public class MatrixMultiplication {
     }
 
     public static void main(String[] args) {
-        double[][] m1 = new double[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-        double[][] m2 = new double[][]{{9, 8, 7}, {6, 5, 4}, {3, 2, 1}};
-        System.out.println(Arrays.deepToString(multiplyMatrix(m1, m2)));
+        Scanner input = new Scanner(System.in);
+        System.out.println("Input a 3x3 matrix: ");
+        double[][] m1 = new double[3][3];
+        for (int i = 0; i < 3; i++){
+            for (int j = 0; j < 3; j++){
+                m1[i][j] = input.nextDouble();
+            }
+        }
+        System.out.println("Input another 3x3 matrix: ");
+        double[][] m2 = new double[3][3];
+        for(int i = 0; i < 3; i++){
+            for(int j = 0; j < 3; j++){
+                m2[i][j] = input.nextDouble();
+            }
+        }
+            System.out.println(Arrays.deepToString(multiplyMatrix(m1, m2)));
     }
 }
